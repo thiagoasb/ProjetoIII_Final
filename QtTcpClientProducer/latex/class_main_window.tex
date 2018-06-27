@@ -1,0 +1,96 @@
+\hypertarget{class_main_window}{}\section{Main\+Window Class Reference}
+\label{class_main_window}\index{Main\+Window@{Main\+Window}}
+Inheritance diagram for Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_afdfeb13ec363b0eb8ecacaf0aa13b605}\label{class_main_window_afdfeb13ec363b0eb8ecacaf0aa13b605}} 
+void \mbox{\hyperlink{class_main_window_afdfeb13ec363b0eb8ecacaf0aa13b605}{put\+Data}} ()
+\begin{DoxyCompactList}\small\item\em put\+Data Transforma o tempo em segundos e inicia o temporizador para envio de dados \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_ac5b669957c442b6eb68573dacfce33e1}\label{class_main_window_ac5b669957c442b6eb68573dacfce33e1}} 
+void \mbox{\hyperlink{class_main_window_ac5b669957c442b6eb68573dacfce33e1}{tcp\+Connect}} ()
+\begin{DoxyCompactList}\small\item\em tcp\+Connect Conecta ao host do servidor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_acb6e44504f4c992e0fbefd6069f51bf7}\label{class_main_window_acb6e44504f4c992e0fbefd6069f51bf7}} 
+void \mbox{\hyperlink{class_main_window_acb6e44504f4c992e0fbefd6069f51bf7}{tcp\+Disconect}} ()
+\begin{DoxyCompactList}\small\item\em tcp\+Disconect Disconecta o host do servidor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a15cb3a5fca1f5db1ffaa48719a4c8bfe}\label{class_main_window_a15cb3a5fca1f5db1ffaa48719a4c8bfe}} 
+void \mbox{\hyperlink{class_main_window_a15cb3a5fca1f5db1ffaa48719a4c8bfe}{parar\+Envio}} ()
+\begin{DoxyCompactList}\small\item\em parar\+Envio Finaliza o envio de dados \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{Main\+Window}} (Q\+Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window}{Main\+Window}} Conecta e desconecta os botões. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_aaa425b1554af3c1f58cc70b4815082ae}{timer\+Event}} (Q\+Timer\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em timer\+Event Envia os dados para produtor e servidor periodicamente \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_main_window_a6532047b0bff225c214b39c58f474c76}{min}}
+\begin{DoxyCompactList}\small\item\em min valor mínimo da data \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a14583b87c8e4e201c4818d8a574d5941}\label{class_main_window_a14583b87c8e4e201c4818d8a574d5941}} 
+int {\bfseries max}
+\item 
+\mbox{\Hypertarget{class_main_window_aec1dc95faae431bc9dd08a126631994d}\label{class_main_window_aec1dc95faae431bc9dd08a126631994d}} 
+int {\bfseries inicia\+Temporalizador}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}\label{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}} 
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Main\+Window()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\mbox{\hyperlink{class_main_window}{Main\+Window}} Conecta e desconecta os botões. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_window_aaa425b1554af3c1f58cc70b4815082ae}\label{class_main_window_aaa425b1554af3c1f58cc70b4815082ae}} 
+\index{Main\+Window@{Main\+Window}!timer\+Event@{timer\+Event}}
+\index{timer\+Event@{timer\+Event}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{timer\+Event()}{timerEvent()}}
+{\footnotesize\ttfamily void Main\+Window\+::timer\+Event (\begin{DoxyParamCaption}\item[{Q\+Timer\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+timer\+Event Envia os dados para produtor e servidor periodicamente 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_main_window_a6532047b0bff225c214b39c58f474c76}\label{class_main_window_a6532047b0bff225c214b39c58f474c76}} 
+\index{Main\+Window@{Main\+Window}!min@{min}}
+\index{min@{min}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{min}{min}}
+{\footnotesize\ttfamily int Main\+Window\+::min}
+
+
+
+min valor mínimo da data 
+
+max valor máximo da data inicia\+Temporalizador Inicia a contagem para envio de dados 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mainwindow.\+h\item 
+mainwindow.\+cpp\end{DoxyCompactItemize}
